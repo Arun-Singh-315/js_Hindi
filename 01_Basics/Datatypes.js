@@ -1,22 +1,22 @@
-// Primitive 
+// // Primitive 
 
-//7 types : String, Number, Boolean, null, undefined, symbol, BigInt
+// //7 types : String, Number, Boolean, null, undefined, symbol, BigInt
 
-const score = 100 //Number
-const scoreValue = 100.3 //number
+// const score = 100 //Number
+// const scoreValue = 100.3 //number
 
-const isLoggedIn = false //boolean
-const OutsideTemp = null // null
-let userEmail; //undefined
+// const isLoggedIn = false //boolean
+// const OutsideTemp = null // null
+// let userEmail; //undefined
 
-const id = Symbol('123')
-const anotherId = Symbol('123')
+// const id = Symbol('123')
+// const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
-const bigNumber = 34555565675678678n
+// const bigNumber = 34555565675678678n
 
-console.log(typeof(bigNumber));
+// console.log(typeof(bigNumber));
 
 // References (Non - primitive)
 
@@ -51,3 +51,27 @@ const myFunction = function(){
        Arrays  =>  object
        Function  =>  function
        Object  =>  object  */
+
+
+
+// // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+ /* datatypes are based on memory allocation
+
+Primitive datatypes->  call by value (string,number,boolean,null,undefined,BigInt,symbol) ->Stack memory
+
+Reference/Non primitive data types -> call by reference ( array,object, function) -> heap memory
+
+JavaScript is a dynamically typed language. This means that you don't need to specify the data type of a variable
+ when you declare it */
+
+let userOne = {
+    name : "Arun",
+    upi : "xxu@ypl"
+}
+
+let userTwo = userOne
+
+userTwo.name = "Yash"
+
+console.log(userOne);
